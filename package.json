@@ -2,14 +2,14 @@
   "name": "demo-webpush-react",
   "version": "0.1.0",
   "dependencies": {
+    "cra-append-sw": "^2.6.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8",
-    "sw-precache": "^5.2.1"
+    "react-scripts": "2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
+    "build": "react-scripts build && cra-append-sw --skip-compile ./public/custom-sw.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
